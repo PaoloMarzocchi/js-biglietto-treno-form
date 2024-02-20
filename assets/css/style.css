@@ -8,7 +8,7 @@ h2{
     padding: 1rem 0;
 }
 h4{
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
 }
 .d_flex{
     display: flex;
@@ -21,14 +21,13 @@ h4{
 }
 
 .input_card{
-    padding: 3.5rem;
-    height: 15rem;
+    padding: 1.5rem;
     background-color: blanchedalmond;
     border-radius: 20px;
     border: 3px solid darkred;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 2rem;
 
     .d_flex{
         justify-content: center;
@@ -59,6 +58,22 @@ h4{
 }
 
 .output_card{
-    display: flex;
-    height: 10rem;
+    
+    background-color: blanchedalmond;
+    border: 3px solid darkred;
+
+    .left{
+        padding: 2rem;
+        width: 15rem;
+        background-color: rgb(182, 182, 182);
+
+        & h3{
+            padding-bottom: 1rem;
+        }
+    }
+
+    .right{
+        padding: 2rem;
+        flex-grow: 1;
+    }
 }

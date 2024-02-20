@@ -15,13 +15,13 @@ if (userAge < 18) {
 } else if (userAge > 65) {
     ticketPrice = ticketPrice - discountOld;
 }
-
+ticketPrice = ticketPrice.toFixed(2) + ' €'
 const submit = document.querySelector('.btn');
 
 submit.addEventListener('click', function () {
     document.querySelector('.print_name').innerHTML += fullName;
-    document.querySelector('.print_age').innerHTML += userAge;
-    document.querySelector('.print_price').innerHTML += ticketPrice;
+    //document.querySelector('.print_age').innerHTML += userAge;
+    document.querySelector('.print_price').innerHTML += ticketPrice ;
 })
 
 console.log(ticketPrice.toFixed(2) + ' €');
