@@ -16,4 +16,12 @@ if (userAge < 18) {
     ticketPrice = ticketPrice - discountOld;
 }
 
+const submit = document.querySelector('.btn');
+
+submit.addEventListener('click', function () {
+    document.querySelector('.print_name').innerHTML += fullName;
+    document.querySelector('.print_age').innerHTML += userAge;
+    document.querySelector('.print_price').innerHTML += ticketPrice;
+})
+
 console.log(ticketPrice.toFixed(2) + ' €');
